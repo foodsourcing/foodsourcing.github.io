@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="static/img/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="static/img//favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="static/img/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="static/json/manifest.json">
+    <link rel="mask-icon" href="static/img/safari-pinned-tab.svg" color="#563d7c">
+    <link rel="icon" href="static/img/favicon.ico">
+    <meta name="theme-color" content="#563d7c">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="static/css/cover.css" rel="stylesheet">
+
+    <title>FoodSourcing.org</title>
+
+  </head>
+   <body>
+    
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand text-center">FoodSourcing.org</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="#">Home</a>
+            <!-- <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Contact</a> -->
+          </nav>
+        </div>
+      </header>
+
+      <section role="main" class="inner cover text-center mt-3 mb-2">
+        <h1 id="covertext" class="cover-heading mb-5    ">भोजन की आवश्यकता?</h1>
+        <p class="lead">
+          हम आपको अधिकारियों / गैर-सरकारी संगठनों को शीघ्रता से डेटा प्रदान करने में मदद करते हैं, ताकि वे जल्दी से जरूरतमंद को भोजन प्रदान कर सकें।<br>
+          Struggling with the COVID'19 lockdown, people are facing uncertainity to everything. <br>Let us help you to reach to authorities sooner, by helping us with your details.
+        <br> </p>
+        <br>
+      </section>
+      <section>
+            <h4 class="mb-3">Provide Details:</h4>
+            <form class="needs-validation" novalidate>
+       
+          <div class="mb-3">
+            <label for="Name">पूरा नाम / Full Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Full Name" value="" required>
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
+
+        <div class="row">
+           <div class="col-md-6 mb-3">
+            <label for="Mobile">मोबाइल नंबर / Mobile Number</label>
+            <input type="Number" class="form-control" id="lastName" placeholder="Mobile Number" value="" required>
+            <div class="invalid-feedback">
+              Valid mobile number is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="email">ईमेल / Email <span class="text-muted">(Optional)</span></label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <div class="invalid-feedback">
+                Please enter a valid email address for updates.
+              </div>
+          </div>
+         
+        </div>
+
+        <div class="mb-3">
+          <label for="address">पता / Address</label>
+          <input type="text" class="form-control" id="address" placeholder="Enter your address here" required>
+          <div class="invalid-feedback">
+            Please enter your shipping address.
+          </div>
+        </div>
+
+<!--    <div class="mb-3">
+          <label for="address2">स्थान पिन / Location Pin</label>
+          <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+        </div> -->
+
+        <div class="row">
+          <div class="col-md-5 mb-3">
+            <label for="country">राज्य / State</label>
+            <select class="custom-select d-block w-100" id="country" required>
+              <option>Uttarakhand</option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="state">शहर / City</label>
+            <select class="custom-select d-block w-100" id="state" required>
+              <option>Haridwar</option>
+              <option>Dehradun</option>
+              <option>Rishikesh</option>
+              <option>Roorkee</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="zip">पिन कोड / Pin Code</label>
+            <input type="text" class="form-control" id="zip" placeholder="Pin Code" required>
+            <div class="invalid-feedback">
+              Zip code required.
+            </div>
+          </div>
+        </div>
+        
+        <hr class="mb-4">
+        Number of food packets required:
+        <br>
+        <div class="row">
+           <div class="col-md-6 mb-3">
+            <label for="Adults">Adult<span class="text-muted">(Large)</span></label>
+            <input type="Number" class="form-control" id="Adult" placeholder="1" value="" required>
+            <div class="invalid-feedback">
+              Valid number is required.
+            </div>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="Child">Child<span class="text-muted">(Small)</span></label>
+              <input type="Number" class="form-control" id="Child" placeholder="0">
+              <div class="invalid-feedback">
+                Please enter a valid email address for updates.
+              </div>
+          </div>
+         
+        </div>
+        
+        <button class="btn btn-primary btn-lg btn-block mt-3" type="submit">Submit</button>
+      </form>
+      </section>
+
+      <footer class="mastfoot mt-5 text-center">
+        <div class="inner">
+          <p>
+            <a href="#"><i class="fab fa-twitter"></i></a>&nbsp;&nbsp;
+            <a href="#"><i class="fab fa-facebook-f"></i></a>&nbsp;&nbsp;
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://kit.fontawesome.com/066a4aa002.js" crossorigin="anonymous"></script>
+    <!-- Optional JavaScript -->
+    <script type="text/javascript">
+      var text = [ "Need food for survival?", "भोजन की आवश्यकता?"];
+      var counter = 0;
+      var elem = document.getElementById("covertext");
+      var inst = setInterval(change, 2000);
+
+      function change() {
+        elem.innerHTML = text[counter];
+        counter++;
+        if (counter >= text.length) {
+          counter = 0;
+          clearInterval(inst); // uncomment this if you want to stop refreshing after one cycle
+        }
+      }
+    </script>
+    <script type="text/javascript">
+      function stickyheaddsadaer(obj) {
+          if($(obj).is(":checked")){
+            alert("Yes checked"); //when checked
+            $("#page-header-inner").addClass("sticky");
+          }else{
+            alert("Not checked"); //when not checked
+          }
+      }
+    </script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
